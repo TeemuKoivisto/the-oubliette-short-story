@@ -1,0 +1,44 @@
+\documentclass[11pt, openany]{book}      % paper size is in preamble.sty
+%\documentclass[oneside]{book}
+
+%\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{etoolbox}
+
+%%%%%%%%%% BOOK INFORMATION %%%%%%%%%%
+\newcommand{\authorname}{Arthur von Helsinki \& Teemu Koivisto}
+\newcommand{\booktitle}{The Oubliette}
+\newcommand{\subtitle}{A forgetful existence}
+\newcommand{\publisher}{Self-published}
+\newcommand{\editionyear}{2023}
+\newcommand{\isbn}{978-3-16-148410-0}   % replace this with your own ISBN
+\title{\booktitle}
+\author{\authorname}
+
+\usepackage{misc/options}
+
+\begin{document}
+
+\frontmatter
+\input{frontmatter/cover}
+\input{frontmatter/copyright}
+%\input{frontmatter/copyrightpage}
+\input{frontmatter/titlepage}
+\input{frontmatter/epigraph}
+
+\mainmatter
+\pagestyle{fancy}
+
+\input{content/ch-01}
+\input{content/ch-02}
+\input{content/ch-03}
+\input{content/ch-04}
+\input{content/ch-05}
+\input{content/ch-06}
+\input{content/ch-07}
+\input{content/ch-08}
+
+\input{content/afterwords}
+
+\end{document}
